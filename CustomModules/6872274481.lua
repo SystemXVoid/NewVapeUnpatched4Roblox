@@ -15048,29 +15048,3 @@ runFunction(function()
 		HoverText = 'Hold down space to jump'
 	})
 end)
-
-runFunction(function()
-	local InfernalKill = {Enabled = false}
-  InfernalKill = GuiLibrary["ObjectsThatCanBeSaved"]["NewVapeWindow"]["Api"].CreateOptionsButton({
-	  ["Name"] = "4BigGuysExploit",
-	  ["Function"] = function(callback)
-		  if callback then
-			  repeat
-			  wait(0.001)
-			  function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
-			  local args = {
-				  [1] = {
-					  ["chargeTime"] = 0.9,
-					  ["player"] = game:GetService("Players").LocalPlayer,
-					  ["weapon"] = getNil("infernal_saber", "Accessory")
-				  }
-			  }
-  
-			  game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("net"):WaitForChild("out"):WaitForChild("_NetManaged"):WaitForChild("HellBladeRelease"):FireServer(unpack(args))
-		  until not InfernalKill["Enabled"]
-	  end
-		  end,
-		  ["HoverText"] = "Found By The Vape Private Team | Recreated By Skids"
-	  })
-  end)
-
