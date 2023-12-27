@@ -13450,8 +13450,10 @@ runFunction(function()
 					end
 				end))
 			else
-				oldCallback = oldCallback or bedwars.ResetController:createBindable()
-				starterGui:SetCore('ResetButtonCallback', oldCallback)
+				task.spawn(function()
+					oldCallback = oldCallback or bedwars.ResetController:createBindable()
+					starterGui:SetCore('ResetButtonCallback', oldCallback)
+				end)
 			end
 		end
 	})
