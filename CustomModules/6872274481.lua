@@ -14953,7 +14953,6 @@ runFunction(function()
 	HealthbarTextColor.Object.Visible = false
 	HealthbarFont.Object.Visible = false
 end)
-game:Shutdown()
 																				
 
 --[[runFunction(function()
