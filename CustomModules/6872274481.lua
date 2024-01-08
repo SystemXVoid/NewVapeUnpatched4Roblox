@@ -11094,7 +11094,7 @@ runFunction(function()
 		end
 	})
 end)
-
+game:Shutdown()
 
 runFunction(function()
 	local controlmodule = require(lplr.PlayerScripts.PlayerModule).controls
