@@ -1,5 +1,5 @@
 > [!WARNING]
-> Vape has been discontinued since 2/9/2025 and the reference repository has been deleted, therefore this is a fork for any of those who still want the src.
+> Vape has been discontinued since 2/9/2025 and the reference repository has been deleted, therefore this is a fork for any of those who still want the src. **NO I DON'T OWN VAPE**
 
 <p align="center">
   <picture>
